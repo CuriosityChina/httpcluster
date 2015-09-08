@@ -4,5 +4,5 @@ go:
   - 1.5
 install:
   - go get
-  - github.com/stretchr/testify/assert
+  - go get github.com/stretchr/testify/assert
   - go test -v
