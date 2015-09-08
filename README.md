@@ -15,7 +15,7 @@ import (
 )
 
 func main() {
-	var httpClusterUrl = "http://192.168.1.2:8000,http://192.168.1.3:8000"
+	var httpClusterUrl = "http://192.168.1.2:8000,192.168.1.3:8000,192.168.1.4:8000"
 	cluster, err := httpcluster.NewHttpCluster(httpClusterUrl, "/ping")
 	if err != nil {
 		log.Fatalf("error: %s", err)
