@@ -1,5 +1,5 @@
 /*
-Copyright 2014 Rohith All rights reserved.
+Copyright 2014-2015 Rohith and Zhanpeng Chen All rights reserved.
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -37,7 +37,6 @@ func FakePingServer(w http.ResponseWriter, req *http.Request) {
 }
 
 func GetFakeCluster() {
-
 	if cluster == nil {
 		cluster, _ = NewHttpCluster(FAKE_HTTP_CLUSTER_URL, FAKE_HEALTH_CHECK_URI)
 	}
