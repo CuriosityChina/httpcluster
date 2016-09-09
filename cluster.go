@@ -174,11 +174,11 @@ func (cluster *HttpCluster) GetMember() (string, error) {
 		if cluster.active.next != nil {
 			cluster.active = cluster.active.next
 		} else {
-			return "", errors.New("No cluster memebers available at the moment")
+			return "", errors.New("No cluster members available at the moment")
 		}
 	}
 	/* we reached the end and there were no members available */
-	return "", errors.New("No cluster memebers available at the moment")
+	return "", errors.New("No cluster members available at the moment")
 }
 
 // Retrieves the current http node url
